@@ -44,7 +44,7 @@ bool topsort(TOP& b1, TOP& b2) {return (b1.v3.Pt() > b2.v3.Pt());}
 
 int main()
 {
-	TFile *ntuple = new TFile("~/Signal_v9ta.root", "READ"); //open the file in read mode
+	TFile *ntuple = new TFile("~/rootfiles/Signal_v9ta.root", "READ"); //open the file in read mode
 	TTree *mytree = (TTree*)ntuple->Get("nominal");
 	nominal N;	
   	N.Init((TTree *)ntuple->Get("nominal"));
